@@ -12,7 +12,7 @@ This project is a basic login page for teaching purpose. Ignore complex concepts
 Considering that you already have `Docker` installed:
 1. $ `git clone https://github.com/Padaw4NN/simple-login-fastapi.git`
 2. $ `cd simple-login-fastapi`
-3. $ `docker-compose -d --build`
+3. $ `docker-compose up -d --build`
 
 ### Routes
 While the containers are running, you can access these (local) pages/routes. In your browser, enter the links:
