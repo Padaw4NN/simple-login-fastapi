@@ -10,7 +10,7 @@ This project is a basic login page for teaching purpose. Ignore complex concepts
 
 ### Run
 Considering that you already have `Docker` installed:
-1. $ `git clone git@github.com:Padaw4NN/simple-login-fastapi.git`
+1. $ `git clone https://github.com/Padaw4NN/simple-login-fastapi.git`
 2. $ `cd simple-login-fastapi`
 3. $ `docker-compose -d --build`
 
