@@ -47,8 +47,11 @@ def display_page(pathname):
 def login_user(n_clicks, email, password):
     if n_clicks > 0 and email and password:
         response = requests.post("http://backend:8081/login", json={"email": email, "password": password})
-        return response.json().get("message", "Login successfully!")
-    return ""
+    if response.status_code == 200:
+        return response.json().get("message", "Successful Login!")
+    else:
+        return response.json().get("message", "Incorrect Credentials!")
+    #return ""
 
 @dash_app.callback(
     Output('register-output', 'children'),
